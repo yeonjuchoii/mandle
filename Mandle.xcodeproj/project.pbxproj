@@ -15,6 +15,8 @@
 		E79ABF8F2C72E48F004744B3 /* CameraLens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79ABF8E2C72E48F004744B3 /* CameraLens.swift */; };
 		E79FE7D22C6ACECE002D2FD9 /* RadioButton.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */; };
 		E79FE7D62C6AD57A002D2FD9 /* NextBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */; };
+		E7A9CDBC2C76D05600D04B07 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */; };
+		E7A9CDBE2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */; };
 		E7B27C302C69842A002C4B26 /* Question1.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C2F2C69842A002C4B26 /* Question1.swiftui.swift */; };
 		E7B27C322C698449002C4B26 /* Question2.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C312C698449002C4B26 /* Question2.swiftui.swift */; };
 		E7B27C342C698475002C4B26 /* Question3.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C332C698475002C4B26 /* Question3.swiftui.swift */; };
@@ -70,6 +72,8 @@
 		E79ABF8E2C72E48F004744B3 /* CameraLens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLens.swift; sourceTree = "<group>"; };
 		E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swiftui.swift; sourceTree = "<group>"; };
 		E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBackButton.swift; sourceTree = "<group>"; };
+		E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SkinProblemClassifier.mlmodel; sourceTree = "<group>"; };
 		E7B27C2F2C69842A002C4B26 /* Question1.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1.swiftui.swift; sourceTree = "<group>"; };
 		E7B27C312C698449002C4B26 /* Question2.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2.swiftui.swift; sourceTree = "<group>"; };
 		E7B27C332C698475002C4B26 /* Question3.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question3.swiftui.swift; sourceTree = "<group>"; };
@@ -180,10 +184,12 @@
 				E7E60E642C4DFF710052F77B /* MandleApp.swift */,
 				E79ABF8E2C72E48F004744B3 /* CameraLens.swift */,
 				E7D9A05F2C6C3EDD00968BFE /* Camera.swift */,
+				E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */,
 				E7E60E682C4DFFAD0052F77B /* Assets.xcassets */,
 				E7E60E662C4DFF710052F77B /* ContentView.swift */,
 				E7BE83D42C70DD060053A151 /* Loading.swift */,
 				E7D9A05D2C6C159E00968BFE /* Main.swift */,
+				E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */,
 				E7BE83C82C70C6E60053A151 /* BccGallery.swift */,
 				E7BE83D02C70DA660053A151 /* BccGallery_.swift */,
 				E7BE83C42C70C6BC0053A151 /* AcneGallery.swift */,
@@ -377,6 +383,7 @@
 				E7B27C442C698510002C4B26 /* Question10.swiftui.swift in Sources */,
 				E79ABF8F2C72E48F004744B3 /* CameraLens.swift in Sources */,
 				E7E60E672C4DFF710052F77B /* ContentView.swift in Sources */,
+				E7A9CDBC2C76D05600D04B07 /* ResultScreen.swift in Sources */,
 				E7B27C302C69842A002C4B26 /* Question1.swiftui.swift in Sources */,
 				E7B27C3C2C6984C0002C4B26 /* Question6.swiftui.swift in Sources */,
 				E76138792C5739320024E4BC /* OnBoardingView.swift in Sources */,
@@ -386,6 +393,7 @@
 				E7B27C402C6984E7002C4B26 /* Question8.swiftui.swift in Sources */,
 				E79FE7D22C6ACECE002D2FD9 /* RadioButton.swiftui.swift in Sources */,
 				E7E60E652C4DFF710052F77B /* MandleApp.swift in Sources */,
+				E7A9CDBE2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel in Sources */,
 				E7D9A0602C6C3EDD00968BFE /* Camera.swift in Sources */,
 				E7B27C342C698475002C4B26 /* Question3.swiftui.swift in Sources */,
 				E7B27C382C69849A002C4B26 /* Question5.swiftui.swift in Sources */,

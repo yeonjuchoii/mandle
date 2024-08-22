@@ -10,35 +10,40 @@ struct AcneGallery: View {
         NavigationStack{
             GeometryReader{
                 metrics in
-                
-                VStack{
-                    HStack{
-                        Button(action: {}, label: {Image("BackArrow")})
-                        Text("Gallery")
-                        Button(action: {}, label: {Image("ShareIcon")})
+                ScrollView{
+                    VStack{
+                        HStack{
+                            Button(action: {}, label: {Image("BackArrow")})
+                            Text("Gallery")
+                            Button(action: {}, label: {Image("ShareIcon")})
+                        }
+                        HStack{
+                            Text("ACNE")
+                                .font(.system(size: 27))
+                            Spacer()
+                            Button(action: {}, label: {Text("show details")})
+                        }
+                        
+                        HStack{
+                            Button(action: {}, label: {Image("RecentIcon")})
+                            Text("Recents")
+                            Spacer()
+                            Button(action: {}, label: {Image("GridIcon")})
+                        }
+                        
+                        RoundedRectangle(cornerRadius: 25)
+                            .frame(height: metrics.size.height * 0.65)
+                            .accentColor(Color(hex: "EFE9E0"))
+                            .overlay{
+                                RoundedRectangle(cornerRadius: 25)
+                                    .background(.white)
+                            }
+                        
+                        RoundedRectangle(cornerRadius: 25)
+                            .frame(height: metrics.size.height * 0.65)
+                            .accentColor(Color(hex: "EFE9E0"))
+                        
                     }
-                    HStack{
-                        Text("ACNE")
-                            .font(.system(size: 27))
-                        Spacer()
-                        Button(action: {}, label: {Text("show details")})
-                    }
-                    
-                    HStack{
-                        Button(action: {}, label: {Image("RecentIcon")})
-                        Text("Recents")
-                        Spacer()
-                        Button(action: {}, label: {Image("GridIcon")})
-                    }
-                    
-                    RoundedRectangle(cornerRadius: 25)
-                        .frame(height: metrics.size.height * 0.65)
-                        .accentColor(Color(hex: "EFE9E0"))
-                    
-                    RoundedRectangle(cornerRadius: 25)
-                        .frame(height: metrics.size.height * 0.65)
-                        .accentColor(Color(hex: "EFE9E0"))
-                    
                 }
             }
         }
