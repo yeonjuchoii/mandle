@@ -22,8 +22,9 @@ struct Camera: View {
                         Button(action: {}, label: {Image("FlashLight")})
                     }
                     
-                    RoundedRectangle(cornerRadius: 0)
-                        .frame(height: metrics.size.height * 0.77)
+                    CameraLens(cameraPosition: .back)
+                        
+                            
                     HStack{
                         //camera shutter
                         //how to make outter stroke
