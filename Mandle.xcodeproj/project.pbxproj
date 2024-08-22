@@ -12,6 +12,7 @@
 		E76138792C5739320024E4BC /* OnBoardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76138782C5739320024E4BC /* OnBoardingView.swift */; };
 		E76A4C632C64567A00AFCD80 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C622C64567900AFCD80 /* QuestionView.swift */; };
 		E76A4C652C645FC300AFCD80 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C642C645FC300AFCD80 /* Color+Extension.swift */; };
+		E79ABF8F2C72E48F004744B3 /* CameraLens.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79ABF8E2C72E48F004744B3 /* CameraLens.swift */; };
 		E79FE7D22C6ACECE002D2FD9 /* RadioButton.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */; };
 		E79FE7D62C6AD57A002D2FD9 /* NextBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */; };
 		E7B27C302C69842A002C4B26 /* Question1.swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C2F2C69842A002C4B26 /* Question1.swiftui.swift */; };
@@ -66,6 +67,7 @@
 		E76138782C5739320024E4BC /* OnBoardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingView.swift; sourceTree = "<group>"; };
 		E76A4C622C64567900AFCD80 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		E76A4C642C645FC300AFCD80 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
+		E79ABF8E2C72E48F004744B3 /* CameraLens.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraLens.swift; sourceTree = "<group>"; };
 		E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swiftui.swift; sourceTree = "<group>"; };
 		E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBackButton.swift; sourceTree = "<group>"; };
 		E7B27C2F2C69842A002C4B26 /* Question1.swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1.swiftui.swift; sourceTree = "<group>"; };
@@ -176,6 +178,8 @@
 			children = (
 				E76A4C662C64601500AFCD80 /* Extension */,
 				E7E60E642C4DFF710052F77B /* MandleApp.swift */,
+				E79ABF8E2C72E48F004744B3 /* CameraLens.swift */,
+				E7D9A05F2C6C3EDD00968BFE /* Camera.swift */,
 				E7E60E682C4DFFAD0052F77B /* Assets.xcassets */,
 				E7E60E662C4DFF710052F77B /* ContentView.swift */,
 				E7BE83D42C70DD060053A151 /* Loading.swift */,
@@ -186,7 +190,6 @@
 				E7BE83CC2C70D8750053A151 /* AcneGallery_.swift */,
 				E7BE83C62C70C6D10053A151 /* AtopicGallery.swift */,
 				E7BE83CE2C70D9650053A151 /* AtopicGallery_.swift */,
-				E7D9A05F2C6C3EDD00968BFE /* Camera.swift */,
 				E7BE83D22C70DB350053A151 /* PicPreview.swift */,
 				E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */,
 				E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */,
@@ -372,6 +375,7 @@
 				E79FE7D62C6AD57A002D2FD9 /* NextBackButton.swift in Sources */,
 				E7BE83C92C70C6E60053A151 /* BccGallery.swift in Sources */,
 				E7B27C442C698510002C4B26 /* Question10.swiftui.swift in Sources */,
+				E79ABF8F2C72E48F004744B3 /* CameraLens.swift in Sources */,
 				E7E60E672C4DFF710052F77B /* ContentView.swift in Sources */,
 				E7B27C302C69842A002C4B26 /* Question1.swiftui.swift in Sources */,
 				E7B27C3C2C6984C0002C4B26 /* Question6.swiftui.swift in Sources */,
