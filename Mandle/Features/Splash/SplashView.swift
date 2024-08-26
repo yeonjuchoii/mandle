@@ -1,6 +1,7 @@
 //  SplashView.swift
 //  Mandle
 //  Created by 최연주 on 7/28/24.
+
 import SwiftUI
 
 struct SplashView: View {
@@ -11,10 +12,11 @@ struct SplashView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(width: 216, height: 230)
             Text("SkinBound")
+                .font(.title3)
                 .padding()
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex: "C8C2B4"))
+        .background(Color.background.ignoresSafeArea())
     }
 }
 
