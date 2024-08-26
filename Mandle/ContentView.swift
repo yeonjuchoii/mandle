@@ -1,18 +1,24 @@
+import SwiftData
 import SwiftUI
 
 struct ContentView: View {
+    @Query private var users: [User]
+    
     @State private var isLoading = true
+    
+    private var user: User? { users.first }
+    
     var body: some View {
-        if isLoading{
+        if isLoading {
             SplashView()
-                .task{
+                .task {
                     try? await Task.sleep(for: .seconds(2))
                     isLoading = false
-            }
-        }
-        else{
+                }
+        } else if user != nil {
+            Main()
+        } else {
             QuestionView()
-            
         }
     }
 }
