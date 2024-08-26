@@ -131,15 +131,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E76A4C662C64601500AFCD80 /* Extension */ = {
+		B946E8212C7CD0EC0047A16B /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				E76A4C642C645FC300AFCD80 /* Color+Extension.swift */,
+				B946E82B2C7CD1D60047A16B /* Atopic */,
+				B946E82A2C7CD1CC0047A16B /* Acne */,
+				B946E8292C7CD1C00047A16B /* Bcc */,
+				B946E8282C7CD1980047A16B /* Splash */,
+				B946E8272C7CD1880047A16B /* Onboarding */,
+				B946E8262C7CD1760047A16B /* Result */,
+				B946E8252C7CD1440047A16B /* Main */,
+				B946E8232C7CD11D0047A16B /* Question */,
+				B946E8222C7CD1030047A16B /* Camera */,
 			);
-			path = Extension;
+			path = Features;
 			sourceTree = "<group>";
 		};
-		E79FE7D72C6ADD48002D2FD9 /* QuestionScreen */ = {
+		B946E8222C7CD1030047A16B /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				E79ABF8E2C72E48F004744B3 /* CameraLens.swift */,
+				E7D9A05F2C6C3EDD00968BFE /* Camera.swift */,
+				E7BE83D22C70DB350053A151 /* PicPreview.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		B946E8232C7CD11D0047A16B /* Question */ = {
 			isa = PBXGroup;
 			children = (
 				E76A4C622C64567900AFCD80 /* QuestionView.swift */,
@@ -154,7 +172,92 @@
 				E7B27C412C6984FA002C4B26 /* Question9.swiftui.swift */,
 				E7B27C432C698510002C4B26 /* Question10.swiftui.swift */,
 			);
-			path = QuestionScreen;
+			path = Question;
+			sourceTree = "<group>";
+		};
+		B946E8242C7CD1330047A16B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE83D42C70DD060053A151 /* Loading.swift */,
+				E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */,
+				E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		B946E8252C7CD1440047A16B /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				E7D9A05D2C6C159E00968BFE /* Main.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		B946E8262C7CD1760047A16B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */,
+			);
+			path = Result;
+			sourceTree = "<group>";
+		};
+		B946E8272C7CD1880047A16B /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				E76138782C5739320024E4BC /* OnBoardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		B946E8282C7CD1980047A16B /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				E76138712C5733110024E4BC /* SplashView.swift */,
+			);
+			path = Splash;
+			sourceTree = "<group>";
+		};
+		B946E8292C7CD1C00047A16B /* Bcc */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE83C82C70C6E60053A151 /* BccGallery.swift */,
+				E7BE83D02C70DA660053A151 /* BccGallery_.swift */,
+			);
+			path = Bcc;
+			sourceTree = "<group>";
+		};
+		B946E82A2C7CD1CC0047A16B /* Acne */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE83C42C70C6BC0053A151 /* AcneGallery.swift */,
+				E7BE83CC2C70D8750053A151 /* AcneGallery_.swift */,
+			);
+			path = Acne;
+			sourceTree = "<group>";
+		};
+		B946E82B2C7CD1D60047A16B /* Atopic */ = {
+			isa = PBXGroup;
+			children = (
+				E7BE83C62C70C6D10053A151 /* AtopicGallery.swift */,
+				E7BE83CE2C70D9650053A151 /* AtopicGallery_.swift */,
+			);
+			path = Atopic;
+			sourceTree = "<group>";
+		};
+		B946E82C2C7CD2100047A16B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E76138732C5734F70024E4BC /* SplashSun.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E76A4C662C64601500AFCD80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E76A4C642C645FC300AFCD80 /* Color+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		E7E60E582C4DFF710052F77B = {
@@ -180,30 +283,15 @@
 		E7E60E632C4DFF710052F77B /* Mandle */ = {
 			isa = PBXGroup;
 			children = (
-				E76A4C662C64601500AFCD80 /* Extension */,
+				B946E82C2C7CD2100047A16B /* Resources */,
+				B946E8242C7CD1330047A16B /* Components */,
+				B946E8212C7CD0EC0047A16B /* Features */,
+				E76A4C662C64601500AFCD80 /* Extensions */,
 				E7E60E642C4DFF710052F77B /* MandleApp.swift */,
-				E79ABF8E2C72E48F004744B3 /* CameraLens.swift */,
-				E7D9A05F2C6C3EDD00968BFE /* Camera.swift */,
-				E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */,
-				E7E60E682C4DFFAD0052F77B /* Assets.xcassets */,
 				E7E60E662C4DFF710052F77B /* ContentView.swift */,
-				E7BE83D42C70DD060053A151 /* Loading.swift */,
-				E7D9A05D2C6C159E00968BFE /* Main.swift */,
 				E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */,
-				E7BE83C82C70C6E60053A151 /* BccGallery.swift */,
-				E7BE83D02C70DA660053A151 /* BccGallery_.swift */,
-				E7BE83C42C70C6BC0053A151 /* AcneGallery.swift */,
-				E7BE83CC2C70D8750053A151 /* AcneGallery_.swift */,
-				E7BE83C62C70C6D10053A151 /* AtopicGallery.swift */,
-				E7BE83CE2C70D9650053A151 /* AtopicGallery_.swift */,
-				E7BE83D22C70DB350053A151 /* PicPreview.swift */,
-				E79FE7D52C6AD57A002D2FD9 /* NextBackButton.swift */,
-				E79FE7D12C6ACECE002D2FD9 /* RadioButton.swiftui.swift */,
-				E79FE7D72C6ADD48002D2FD9 /* QuestionScreen */,
+				E7E60E682C4DFFAD0052F77B /* Assets.xcassets */,
 				E7E60E6A2C4DFFAD0052F77B /* Preview Content */,
-				E76138712C5733110024E4BC /* SplashView.swift */,
-				E76138732C5734F70024E4BC /* SplashSun.json */,
-				E76138782C5739320024E4BC /* OnBoardingView.swift */,
 			);
 			path = Mandle;
 			sourceTree = "<group>";
