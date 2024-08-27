@@ -19,7 +19,7 @@ struct AcneGalleryView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 16) {
                 HStack(alignment: .bottom) {
                     Text("ACNE")
                         .font(.title2)
@@ -39,7 +39,20 @@ struct AcneGalleryView: View {
                         .padding(.top, 240)
                 } else {
                     ForEach(acnes) { acne in
-                        Text(acne.symptom)
+                        VStack(alignment: .leading, spacing: 0) {
+                            if let uiImage = ImageFileManager.shared.loadImageFromDocumentDirectory(imageName: acne.imageName) {
+                                Image(uiImage: uiImage)
+                                    .centerCropped()
+                                    .frame(height: 360)
+                            } else {
+                                Rectangle()
+                                    .fill(Color.secondaryText)
+                            }
+                            Text(acne.symptom)
+                                .padding(24)
+                        }
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     }
                 }
             }

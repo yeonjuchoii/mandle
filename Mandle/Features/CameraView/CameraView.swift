@@ -94,7 +94,15 @@ struct CameraView: View {
                 case .loadingView:
                     LoadingView(path: $viewModel.path, image: type.image)
                 case .resultView:
-                    ResultScreen(output: type.result!)
+                    ResultView(isCameraOn: $isCameraOn, path: $viewModel.path, output: type.result!, image: type.image)
+                case .acneView:
+                    AcneView()
+                case .atopicView:
+                    AtopicView()
+                case .bccView:
+                    BccView()
+                case .howToProtectView:
+                    HowToProtectView()
                 }
             }
         }

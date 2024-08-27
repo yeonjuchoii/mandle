@@ -16,13 +16,17 @@ struct LoadingView: View {
     }
     
     var body: some View {
-        VStack{
-            //how to fit the image to scale
+        VStack(spacing: 12) {
             Image("LoadingIcon")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 160, height: 160)
             Text("Loading...")
+                .font(.title3)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex : "8D807D"))
+        .background(Color.secondaryBackground)
+        .navigationBarBackButtonHidden()
         .task {
             guard let image = self.image.convertToBuffer(),
                   let model = try? SkinProblemClassifier(),
@@ -36,7 +40,17 @@ struct LoadingView: View {
             
             try? await Task.sleep(for: .seconds(2))
             
-            path.append(CameraViewType(path: .resultView, image: self.image, result: ["result": 0.2]))
+            path.append(
+                CameraViewType(
+                    path: .resultView,
+                    image: self.image,
+                    result: [
+                        "Acne": result.targetProbability["Acne"] ?? 0,
+                        "Atopic": result.targetProbability["Atopic"] ?? 0,
+                        "Basal Cell Carcinoma (BCC)": result.targetProbability["Basal Cell Carcinoma (BCC)"] ?? 0
+                    ]
+                )
+            )
         }
     }
 }

@@ -17,7 +17,7 @@ struct AtopicGalleryView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 16) {
                 HStack(alignment: .bottom) {
                     Text("ATOPIC\nDERMATITIS")
                         .font(.title2)
@@ -37,7 +37,20 @@ struct AtopicGalleryView: View {
                         .padding(.top, 240)
                 } else {
                     ForEach(atopics) { atopic in
-                        Text(atopic.symptom)
+                        VStack(alignment: .leading, spacing: 0) {
+                            if let uiImage = ImageFileManager.shared.loadImageFromDocumentDirectory(imageName: atopic.imageName) {
+                                Image(uiImage: uiImage)
+                                    .centerCropped()
+                                    .frame(height: 360)
+                            } else {
+                                Rectangle()
+                                    .fill(Color.secondaryText)
+                            }
+                            Text(atopic.symptom)
+                                .padding(24)
+                        }
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     }
                 }
             }
