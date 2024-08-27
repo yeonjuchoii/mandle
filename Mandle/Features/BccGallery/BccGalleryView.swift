@@ -1,9 +1,12 @@
 //  BccGallery.swift
 //  Mandle
 
+import SwiftData
 import SwiftUI
 
 struct BccGalleryView: View {
+    @Query private var bccs: [Bcc]
+    
     @Environment(\.dismiss) var dismiss
     
     @Binding private var path: [NavigationDestinaion]
@@ -16,22 +19,27 @@ struct BccGalleryView: View {
         ScrollView {
             VStack(spacing: 0) {
                 HStack(alignment: .bottom) {
-                    Text("Basal Cell\nCarcinoma")
+                    Text("BASAL CELL\nCARCINOMA")
                         .font(.title2)
                     Spacer()
                     Button {
-                        path.append(.atopicView)
+                        path.append(.bccView)
                     } label: {
                         Text("show details")
                             .font(.body2)
                     }
                 }
                 
-                // TODO: 조건
-                Text("No Photos")
-                    .font(.body1)
-                    .foregroundStyle(Color.secondaryText)
-                    .padding(.top, 240)
+                if bccs.isEmpty {
+                    Text("No Photos")
+                        .font(.body1)
+                        .foregroundStyle(Color.secondaryText)
+                        .padding(.top, 240)
+                } else {
+                    ForEach(bccs) { bcc in
+                        Text(bcc.symptom)
+                    }
+                }
             }
             .padding(.vertical, 28)
             .padding(.horizontal, 24)

@@ -7,46 +7,21 @@ struct AtopicView: View {
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
-        VStack{
-            HStack{
-                Text("ATOPIC DERMATITIS")
-                    .font(.system(size: 27))
-                Spacer()
-                Button(action: {}, label: {Text("show details")})
-            }
-            
-            HStack{
-                Button(action: {}, label: {Image("RecentIcon")})
-                Text("Recents")
-                Spacer()
-                Button(action: {}, label: {Image("GridIcon")})
-            }
-            
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
+        ScrollView {
+            VStack(alignment: .leading, spacing: 24) {
+                Text("ATOPIC\nDERMATITIS")
+                    .font(.title2)
                 
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
+                Text("""
+                """)
+                .font(.body2)
+                .lineSpacing(4)
             }
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-                
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-            }
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-                
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-            }
+            .padding(.vertical, 28)
+            .padding(.horizontal, 24)
         }
-        .padding(.horizontal, 24)
-        .background(Color.background.ignoresSafeArea())
-        .navigationTitle("Gallery")
+        .background(Color.secondaryBackground.ignoresSafeArea())
+        .navigationTitle("")
         .navigationBarBackButtonHidden()
         .toolbar {
             ToolbarItem(placement: .topBarLeading) {

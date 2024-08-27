@@ -1,9 +1,12 @@
 //  AtopicGallery.swift
 //  Mandle
 
+import SwiftData
 import SwiftUI
 
 struct AtopicGalleryView: View {
+    @Query private var atopics: [Atopic]
+    
     @Environment(\.dismiss) var dismiss
     
     @Binding private var path: [NavigationDestinaion]
@@ -27,11 +30,16 @@ struct AtopicGalleryView: View {
                     }
                 }
                 
-                // TODO: 조건
-                Text("No Photos")
-                    .font(.body1)
-                    .foregroundStyle(Color.secondaryText)
-                    .padding(.top, 240)
+                if atopics.isEmpty {
+                    Text("No Photos")
+                        .font(.body1)
+                        .foregroundStyle(Color.secondaryText)
+                        .padding(.top, 240)
+                } else {
+                    ForEach(atopics) { atopic in
+                        Text(atopic.symptom)
+                    }
+                }
             }
             .padding(.vertical, 28)
             .padding(.horizontal, 24)
