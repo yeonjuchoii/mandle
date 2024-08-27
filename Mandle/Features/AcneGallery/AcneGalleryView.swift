@@ -3,9 +3,12 @@
 
 //scroll, no photo view, 사진 자동으로 업로드 되는 방법, roundedrectangle 겹치게 하는 방법, symptoms 입력 할수있는 grid 만들기
 
+import SwiftData
 import SwiftUI
 
 struct AcneGalleryView: View {
+    @Query private var acnes: [Acne]
+    
     @Environment(\.dismiss) var dismiss
     
     @Binding private var path: [NavigationDestinaion]
@@ -22,18 +25,23 @@ struct AcneGalleryView: View {
                         .font(.title2)
                     Spacer()
                     Button {
-                        path.append(.atopicView)
+                        path.append(.acneView)
                     } label: {
                         Text("show details")
                             .font(.body2)
                     }
                 }
                 
-                // TODO: 조건
-                Text("No Photos")
-                    .font(.body1)
-                    .foregroundStyle(Color.secondaryText)
-                    .padding(.top, 240)
+                if acnes.isEmpty {
+                    Text("No Photos")
+                        .font(.body1)
+                        .foregroundStyle(Color.secondaryText)
+                        .padding(.top, 240)
+                } else {
+                    ForEach(acnes) { acne in
+                        Text(acne.symptom)
+                    }
+                }
             }
             .padding(.vertical, 28)
             .padding(.horizontal, 24)

@@ -8,7 +8,7 @@ import SwiftUI
 @main
 struct MandleApp: App {
     private var modelContainer: ModelContainer = {
-        let schema = Schema([User.self])
+        let schema = Schema([User.self, Acne.self, Atopic.self, Bcc.self])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
         
         do {

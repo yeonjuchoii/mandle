@@ -4,54 +4,34 @@
 import SwiftUI
 
 struct BccView: View {
+    @Environment(\.dismiss) var dismiss
+    
     var body: some View {
-        VStack{
-            HStack{
-                Button(action: {}, label: {Image("BackArrow")})
-                Text("Gallery")
-                Button(action: {}, label: {Image("ShareIcon")})
-            }
-            HStack{
-                Text("BASAL CELL CARCINOMA")
-                    .font(.system(size: 27))
-                Spacer()
-                Button(action: {}, label: {Text("show details")})
-            }
-            
-            HStack{
-                Button(action: {}, label: {Image("RecentIcon")})
-                Text("Recents")
-                Spacer()
-                Button(action: {}, label: {Image("GridIcon")})
-            }
-            
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
+        ScrollView {
+            VStack(alignment: .leading, spacing: 24) {
+                Text("BASAL CELL\nCARCINOMA")
+                    .font(.title2)
                 
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
+                Text("""
+                """)
+                .font(.body2)
+                .lineSpacing(4)
             }
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-                
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-            }
-            HStack{
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
-                
-                RoundedRectangle(cornerRadius: 25)
-                    .accentColor(Color(hex: "EFE9E0"))
+            .padding(.vertical, 28)
+            .padding(.horizontal, 24)
+        }
+        .background(Color.secondaryBackground.ignoresSafeArea())
+        .navigationTitle("")
+        .navigationBarBackButtonHidden()
+        .toolbar {
+            ToolbarItem(placement: .topBarLeading) {
+                Button {
+                    dismiss()
+                } label: {
+                    Image("BackArrow")
+                }
             }
         }
-        .padding(.top, 20)
-        .padding(.horizontal, 25)
-        
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(Color(hex : "CCC5AC"))
     }
 }
 
