@@ -19,6 +19,8 @@ extension Color {
     static let buttonOff = Color(hex: "F2F1EE")
     static let recButton = Color(hex: "949688")
     
+    static let takeButton = Color(hex: "616754")
+    
     init(hex: String) {
         let scanner = Scanner(string: hex)
         _ = scanner.scanString("#")

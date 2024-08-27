@@ -21,6 +21,7 @@ struct AcneView: View {
             .padding(.vertical, 28)
             .padding(.horizontal, 24)
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color.secondaryBackground.ignoresSafeArea())
         .navigationTitle("")
         .navigationBarBackButtonHidden()

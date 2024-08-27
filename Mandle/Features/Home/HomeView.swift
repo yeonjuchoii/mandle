@@ -37,7 +37,7 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background {
                         RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.white)
+                            .fill(Color.white.opacity(0.5))
                     }
                     
                     VStack(alignment: .leading, spacing: 12) {
@@ -51,7 +51,7 @@ struct HomeView: View {
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .background {
                         RoundedRectangle(cornerRadius: 12)
-                            .fill(Color.white)
+                            .fill(Color.white.opacity(0.5))
                     }
                 }
                 .frame(height: 80)
@@ -149,7 +149,7 @@ struct HomeView: View {
                 }
             }
             .fullScreenCover(isPresented: $viewModel.isCameraOn) {
-                Camera(isCameraOn: $viewModel.isCameraOn)
+                CameraView(isCameraOn: $viewModel.isCameraOn)
             }
         }
     }
