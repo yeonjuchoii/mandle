@@ -19,15 +19,16 @@
 		B9C62FA12C7DAF19009AB869 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62F9F2C7DAF19009AB869 /* HomeViewModel.swift */; };
 		B9C62FA42C7DBF5B009AB869 /* CameraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FA32C7DBF5B009AB869 /* CameraViewModel.swift */; };
 		B9C62FA72C7E3324009AB869 /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FA62C7E3324009AB869 /* Image+Extension.swift */; };
-		B9C62FAA2C7E3606009AB869 /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FA92C7E3606009AB869 /* LoadingViewModel.swift */; };
 		B9C62FAC2C7E3736009AB869 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FAB2C7E3736009AB869 /* UIImage+Extension.swift */; };
+		B9C62FAF2C7E3DB6009AB869 /* HowToProtectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FAE2C7E3DB6009AB869 /* HowToProtectView.swift */; };
+		B9C62FB12C7E3EEE009AB869 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FB02C7E3EEE009AB869 /* ResultViewModel.swift */; };
 		E76138722C5733110024E4BC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76138712C5733110024E4BC /* SplashView.swift */; };
 		E76138742C5734F70024E4BC /* SplashSun.json in Resources */ = {isa = PBXBuildFile; fileRef = E76138732C5734F70024E4BC /* SplashSun.json */; };
 		E76A4C632C64567A00AFCD80 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C622C64567900AFCD80 /* QuestionView.swift */; };
 		E76A4C652C645FC300AFCD80 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C642C645FC300AFCD80 /* Color+Extension.swift */; };
 		E79ABF8F2C72E48F004744B3 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79ABF8E2C72E48F004744B3 /* CameraPreviewView.swift */; };
 		E79FE7D22C6ACECE002D2FD9 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79FE7D12C6ACECE002D2FD9 /* RadioButton.swift */; };
-		E7A9CDBC2C76D05600D04B07 /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */; };
+		E7A9CDBC2C76D05600D04B07 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A9CDBB2C76D05600D04B07 /* ResultView.swift */; };
 		E7A9CDBE2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */; };
 		E7B27C302C69842A002C4B26 /* Question1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C2F2C69842A002C4B26 /* Question1View.swift */; };
 		E7B27C322C698449002C4B26 /* Question2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7B27C312C698449002C4B26 /* Question2View.swift */; };
@@ -87,15 +88,16 @@
 		B9C62F9F2C7DAF19009AB869 /* HomeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B9C62FA32C7DBF5B009AB869 /* CameraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewModel.swift; sourceTree = "<group>"; };
 		B9C62FA62C7E3324009AB869 /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
-		B9C62FA92C7E3606009AB869 /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
 		B9C62FAB2C7E3736009AB869 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		B9C62FAE2C7E3DB6009AB869 /* HowToProtectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToProtectView.swift; sourceTree = "<group>"; };
+		B9C62FB02C7E3EEE009AB869 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		E76138712C5733110024E4BC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		E76138732C5734F70024E4BC /* SplashSun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashSun.json; sourceTree = "<group>"; };
 		E76A4C622C64567900AFCD80 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		E76A4C642C645FC300AFCD80 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E79ABF8E2C72E48F004744B3 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
 		E79FE7D12C6ACECE002D2FD9 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
-		E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		E7A9CDBB2C76D05600D04B07 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		E7A9CDBD2C76D16F00D04B07 /* SkinProblemClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SkinProblemClassifier.mlmodel; sourceTree = "<group>"; };
 		E7B27C2F2C69842A002C4B26 /* Question1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1View.swift; sourceTree = "<group>"; };
 		E7B27C312C698449002C4B26 /* Question2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question2View.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				B9C62FA52C7DBF64009AB869 /* PhotoPreviewView */,
 				B9C62FA82C7E34E4009AB869 /* Loading */,
 				B946E8262C7CD1760047A16B /* Result */,
+				B9C62FAD2C7E3D9F009AB869 /* HowToProtectView */,
 				B946E82A2C7CD1CC0047A16B /* AcneGallery */,
 				B946E8392C7D9CBF0047A16B /* Acne */,
 				B946E83B2C7D9FE90047A16B /* AtopicGallery */,
@@ -205,7 +208,8 @@
 		B946E8262C7CD1760047A16B /* Result */ = {
 			isa = PBXGroup;
 			children = (
-				E7A9CDBB2C76D05600D04B07 /* ResultScreen.swift */,
+				E7A9CDBB2C76D05600D04B07 /* ResultView.swift */,
+				B9C62FB02C7E3EEE009AB869 /* ResultViewModel.swift */,
 			);
 			path = Result;
 			sourceTree = "<group>";
@@ -339,9 +343,16 @@
 			isa = PBXGroup;
 			children = (
 				E7BE83D42C70DD060053A151 /* LoadingView.swift */,
-				B9C62FA92C7E3606009AB869 /* LoadingViewModel.swift */,
 			);
 			path = Loading;
+			sourceTree = "<group>";
+		};
+		B9C62FAD2C7E3D9F009AB869 /* HowToProtectView */ = {
+			isa = PBXGroup;
+			children = (
+				B9C62FAE2C7E3DB6009AB869 /* HowToProtectView.swift */,
+			);
+			path = HowToProtectView;
 			sourceTree = "<group>";
 		};
 		E76A4C662C64601500AFCD80 /* Extensions */ = {
@@ -561,13 +572,13 @@
 				E7B27C3E2C6984CC002C4B26 /* Question7View.swift in Sources */,
 				E7BE83D12C70DA660053A151 /* BccView.swift in Sources */,
 				E7BE83C52C70C6BC0053A151 /* AcneGalleryView.swift in Sources */,
+				B9C62FAF2C7E3DB6009AB869 /* HowToProtectView.swift in Sources */,
 				B946E8362C7CEA8D0047A16B /* FillButton.swift in Sources */,
 				E76A4C652C645FC300AFCD80 /* Color+Extension.swift in Sources */,
 				E7B27C422C6984FA002C4B26 /* Question9View.swift in Sources */,
 				B9C62FA42C7DBF5B009AB869 /* CameraViewModel.swift in Sources */,
 				B946E83D2C7DA6190047A16B /* Acne.swift in Sources */,
 				B9C62FAC2C7E3736009AB869 /* UIImage+Extension.swift in Sources */,
-				B9C62FAA2C7E3606009AB869 /* LoadingViewModel.swift in Sources */,
 				E7BE83CF2C70D9650053A151 /* AtopicView.swift in Sources */,
 				E7BE83D32C70DB350053A151 /* PhotoPreviewView.swift in Sources */,
 				E7BE83C92C70C6E60053A151 /* BccGalleryView.swift in Sources */,
@@ -577,7 +588,7 @@
 				B946E83F2C7DA6210047A16B /* Atopic.swift in Sources */,
 				E79ABF8F2C72E48F004744B3 /* CameraPreviewView.swift in Sources */,
 				E7E60E672C4DFF710052F77B /* ContentView.swift in Sources */,
-				E7A9CDBC2C76D05600D04B07 /* ResultScreen.swift in Sources */,
+				E7A9CDBC2C76D05600D04B07 /* ResultView.swift in Sources */,
 				E7B27C302C69842A002C4B26 /* Question1View.swift in Sources */,
 				E7B27C3C2C6984C0002C4B26 /* Question6View.swift in Sources */,
 				E7BE83D52C70DD060053A151 /* LoadingView.swift in Sources */,
@@ -592,6 +603,7 @@
 				E7B27C342C698475002C4B26 /* Question3View.swift in Sources */,
 				E7B27C382C69849A002C4B26 /* Question5View.swift in Sources */,
 				E76138722C5733110024E4BC /* SplashView.swift in Sources */,
+				B9C62FB12C7E3EEE009AB869 /* ResultViewModel.swift in Sources */,
 				B9C62FA02C7DAF19009AB869 /* HomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

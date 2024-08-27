@@ -12,6 +12,10 @@ enum CameraViewPath {
     case photoPreviewView
     case loadingView
     case resultView
+    case acneView
+    case atopicView
+    case bccView
+    case howToProtectView
 }
 
 struct CameraViewType: Hashable {

@@ -17,7 +17,7 @@ struct BccGalleryView: View {
     
     var body: some View {
         ScrollView {
-            VStack(spacing: 0) {
+            VStack(spacing: 16) {
                 HStack(alignment: .bottom) {
                     Text("BASAL CELL\nCARCINOMA")
                         .font(.title2)
@@ -37,7 +37,20 @@ struct BccGalleryView: View {
                         .padding(.top, 240)
                 } else {
                     ForEach(bccs) { bcc in
-                        Text(bcc.symptom)
+                        VStack(alignment: .leading, spacing: 0) {
+                            if let uiImage = ImageFileManager.shared.loadImageFromDocumentDirectory(imageName: bcc.imageName) {
+                                Image(uiImage: uiImage)
+                                    .centerCropped()
+                                    .frame(height: 360)
+                            } else {
+                                Rectangle()
+                                    .fill(Color.secondaryText)
+                            }
+                            Text(bcc.symptom)
+                                .padding(24)
+                        }
+                        .background(Color.white)
+                        .clipShape(RoundedRectangle(cornerRadius: 16))
                     }
                 }
             }
