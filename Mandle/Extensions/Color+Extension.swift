@@ -7,7 +7,11 @@ import SwiftUI
 extension Color {
     static let background = Color(hex: "C8C2B4")
     
-    static let slider = Color(hex: "2B3C2F")
+    static let slider = Color(hex: "9E645F")
+    static let loading = Color(hex: "2B3C2F")
+    
+    static let textField = Color(hex: "DBD7D2")
+    
     static let buttonOn = Color(hex: "837566")
     static let buttonOff = Color(hex: "F2F1EE")
     static let recButton = Color(hex: "949688")

@@ -13,9 +13,9 @@ extension Font {
     static let title3: Font = .system(size: 20, weight: .bold)
     static let title4: Font = .system(size: 16, weight: .bold)
     
-    static let body1: Font = .system(size: 16, weight: .bold)
-    static let body2: Font = .system(size: 14, weight: .bold)
+    static let body1: Font = .system(size: 16, weight: .regular)
+    static let body2: Font = .system(size: 14, weight: .regular)
     
-    static let caption1: Font = .system(size: 14, weight: .bold)
-    static let caption2: Font = .system(size: 12, weight: .bold)
+    static let caption1: Font = .system(size: 14, weight: .regular)
+    static let caption2: Font = .system(size: 12, weight: .regular)
 }
