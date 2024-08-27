@@ -8,19 +8,44 @@ import SwiftUI
 struct CameraView: View {
     @Binding private var isCameraOn : Bool
     
-    
+    @State private var viewModel = CameraViewModel()
     
     init(isCameraOn: Binding<Bool>) {
         self._isCameraOn = isCameraOn
     }
     
     var body: some View {
-        NavigationStack{
+        NavigationStack(path: $viewModel.path) {
             VStack(spacing: 18) {
+                viewModel.cameraPreview
+                    .overlay {
+                        VStack(spacing: 0) {
+                            Rectangle()
+                                .fill(Color.black.opacity(0.4))
+                            HStack(spacing: 0) {
+                                Rectangle()
+                                    .fill(Color.black.opacity(0.4))
+                                    .frame(width: 80)
+                                Rectangle()
+                                    .strokeBorder(
+                                        Color.white,
+                                        style: .init(lineWidth: 4, dash: [10])
+                                    )
+                                Rectangle()
+                                    .fill(Color.black.opacity(0.4))
+                                    .frame(width: 80)
+                            }
+                            Rectangle()
+                                .fill(Color.black.opacity(0.4))
+                        }
+                    }
+                    .onAppear {
+                        viewModel.cameraPreview.requestCameraPermission()
+                    }
                 
                 HStack {
                     Button {
-                        
+                        viewModel.capturePhoto()
                     } label: {
                         Circle()
                             .fill(Color.takeButton)
@@ -35,7 +60,7 @@ struct CameraView: View {
                 .frame(maxWidth: .infinity, minHeight: 160)
                 .overlay(alignment: .trailing) {
                     Button {
-                        
+                        viewModel.changePosition()
                     } label: {
                         Image("FlipCamera")
                             .padding(8)
@@ -60,6 +85,16 @@ struct CameraView: View {
                             .foregroundStyle(Color.black)
                             .frame(width: 16, height: 16)
                     }
+                }
+            }
+            .navigationDestination(for: CameraViewType.self) { type in
+                switch type.path {
+                case .photoPreviewView:
+                    PhotoPreviewView(image: type.image!)
+                case .loadingView:
+                    Loading()
+                case .resultView:
+                    ResultScreen(output: type.result!)
                 }
             }
         }

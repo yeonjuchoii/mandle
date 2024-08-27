@@ -2,8 +2,15 @@ import Foundation
 import AVFoundation
 import SwiftUI
 
-struct CameraLens: UIViewRepresentable {
-    init(cameraPosition: AVCaptureDevice.Position) {
+struct CameraPreviewView: UIViewRepresentable {
+    private let cameraQueue = DispatchQueue(label: "cameraQueue")
+    private let output: AVCapturePhotoOutput
+    
+    private var captureSession = AVCaptureSession()
+    private var currentInput: AVCaptureDeviceInput?
+    
+    init(cameraPosition: AVCaptureDevice.Position, output: AVCapturePhotoOutput) {
+        self.output = output
         configureCaptureSession(cameraPosition: cameraPosition)
     }
     
@@ -28,6 +35,11 @@ struct CameraLens: UIViewRepresentable {
             AVCaptureDevice.requestAccess(for: .video) { authStatus in
                 if authStatus {
                     self.cameraQueue.async {
+                        if captureSession.canAddOutput(output) {
+                            captureSession.addOutput(output)
+                            output.isHighResolutionCaptureEnabled = true
+                            output.maxPhotoQualityPrioritization = .quality
+                        }
                         self.captureSession.startRunning()
                     }
                 }
@@ -36,6 +48,11 @@ struct CameraLens: UIViewRepresentable {
             break
         case .authorized:
             self.cameraQueue.async {
+                if captureSession.canAddOutput(output) {
+                    captureSession.addOutput(output)
+                    output.isHighResolutionCaptureEnabled = true
+                    output.maxPhotoQualityPrioritization = .quality
+                }
                 self.captureSession.startRunning()
             }
         default:
@@ -43,16 +60,12 @@ struct CameraLens: UIViewRepresentable {
         }
     }
     
-    private let cameraQueue = DispatchQueue(label: "cameraQueue")
-    private var captureSession = AVCaptureSession()
     private mutating func configureCaptureSession(cameraPosition: AVCaptureDevice.Position) {
         let videoOutput = AVCaptureVideoDataOutput()
         self.captureSession.addOutput(videoOutput)
         
         configureCamera(cameraPosition: cameraPosition)
     }
-    
-    private var currentInput: AVCaptureDeviceInput?
     
     mutating func configureCamera(cameraPosition: AVCaptureDevice.Position) {
         let discoverySession = AVCaptureDevice.DiscoverySession(deviceTypes: [.builtInWideAngleCamera,.builtInUltraWideCamera], mediaType: .video, position: cameraPosition)
@@ -74,7 +87,7 @@ struct CameraLens: UIViewRepresentable {
     }
 }
 
-fileprivate class PreviewView:UIView {
+fileprivate class PreviewView: UIView {
     override class var layerClass: AnyClass {
         return AVCaptureVideoPreviewLayer.self
     }
