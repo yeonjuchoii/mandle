@@ -90,9 +90,9 @@ struct CameraView: View {
             .navigationDestination(for: CameraViewType.self) { type in
                 switch type.path {
                 case .photoPreviewView:
-                    PhotoPreviewView(image: type.image!)
+                    PhotoPreviewView(path: $viewModel.path, image: type.image)
                 case .loadingView:
-                    Loading()
+                    LoadingView(path: $viewModel.path, image: type.image)
                 case .resultView:
                     ResultScreen(output: type.result!)
                 }
