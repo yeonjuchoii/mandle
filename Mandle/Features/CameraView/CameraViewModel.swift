@@ -16,7 +16,7 @@ enum CameraViewPath {
 
 struct CameraViewType: Hashable {
     let path: CameraViewPath
-    let image: UIImage?
+    let image: UIImage
     let result: [String: Double]?
 }
 
