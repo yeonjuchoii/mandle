@@ -5,7 +5,7 @@ import SwiftUI
 
 struct ResultScreen: View {
     //type 지정할때는 :
-    let output : SkinProblemClassifierOutput
+    let output : [String: Double]
     var body: some View {
         VStack{
             Button(action: {
