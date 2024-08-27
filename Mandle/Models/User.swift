@@ -47,4 +47,18 @@ class User {
         self.sunExposeLevel = sunExposeLevel
         self.exerciseRegularity = exerciseRegularity
     }
+    
+    static let initialUser = User(
+        name: "",
+        age: 0,
+        gender: "",
+        livingStressLevel: 5,
+        workStressLevel: 5,
+        allergies: "",
+        isConsiderLivingEquator: "Unsure",
+        hasFamilyHaveSkinCancer: false,
+        skinType: "",
+        sunExposeLevel: 5,
+        exerciseRegularity: ""
+    )
 }

@@ -4,40 +4,45 @@
 import SwiftUI
 
 struct QuestionView: View {
-    @State var quali = 0
-    @State var move = 1
+    @State private var viewModel = QuestionViewModel(user: .initialUser, step: 1)
     
     var body: some View {
-        if(move == 1){
-            Question1(move : $move)
+        VStack(alignment: .leading, spacing: 12) {
+            Text("Welcome")
+                .font(.title2)
+            
+            ProgressView(value: Double(viewModel.step) / 10)
+                .accentColor(.loading)
+                .animation(.easeIn, value: viewModel.step)
+            
+            switch viewModel.step {
+            case 1:
+                Question1View(viewModel: $viewModel)
+            case 2:
+                Question2View(viewModel: $viewModel)
+            case 3:
+                Question3View(viewModel: $viewModel)
+            case 4:
+                Question4View(viewModel: $viewModel)
+            case 5:
+                Question5View(viewModel: $viewModel)
+            case 6:
+                Question6View(viewModel: $viewModel)
+            case 7:
+                Question7View(viewModel: $viewModel)
+            case 8:
+                Question8View(viewModel: $viewModel)
+            case 9:
+                Question9View(viewModel: $viewModel)
+            case 10:
+                Question10View(viewModel: $viewModel)
+            default:
+                fatalError("There is no screen for question")
+            }
         }
-        else if(move == 2){
-            Question2(move : $move)
-        }
-        else if(move == 3){
-            Question3(move : $move)
-        }
-        else if(move == 4){
-            Question4(move : $move)
-        }
-        else if(move == 5){
-            Question5(move : $move)
-        }
-        else if(move == 6){
-            Question6(move : $move)
-        }
-        else if(move == 7){
-            Question7(move : $move)
-        }
-        else if(move == 8){
-            Question8(move : $move)
-        }
-        else if(move == 9){
-            Question9(move : $move)
-        }
-        else if(move == 10){
-            Question10(move : $move)
-        }
+        .padding(.vertical, 40)
+        .padding(.horizontal, 24)
+        .background(Color.background.ignoresSafeArea())
     }
 }
 
