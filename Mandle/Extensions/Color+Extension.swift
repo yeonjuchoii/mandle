@@ -6,6 +6,9 @@ import SwiftUI
 
 extension Color {
     static let background = Color(hex: "C8C2B4")
+    static let secondaryBackground = Color(hex: "8D807D")
+    
+    static let secondaryText = Color(hex: "767676")
     
     static let slider = Color(hex: "9E645F")
     static let loading = Color(hex: "2B3C2F")

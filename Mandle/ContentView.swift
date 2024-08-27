@@ -16,7 +16,7 @@ struct ContentView: View {
                     isLoading = false
                 }
         } else if user != nil {
-            Main()
+            MainView()
         } else {
             QuestionView()
         }
