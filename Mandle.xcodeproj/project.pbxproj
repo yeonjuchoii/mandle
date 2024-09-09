@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B93604F22C8EBC5A005FDCB1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F12C8EBC5A005FDCB1 /* NetworkManager.swift */; };
+		B93604F42C8EBC9B005FDCB1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F32C8EBC9B005FDCB1 /* Weather.swift */; };
+		B93604F62C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */; };
 		B946E82F2C7CDB660047A16B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E82E2C7CDB660047A16B /* User.swift */; };
 		B946E8312C7CE0C00047A16B /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E8302C7CE0C00047A16B /* Font+Extension.swift */; };
 		B946E8332C7CE22E0047A16B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E8322C7CE22E0047A16B /* QuestionViewModel.swift */; };
@@ -23,7 +26,6 @@
 		B9C62FAF2C7E3DB6009AB869 /* HowToProtectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FAE2C7E3DB6009AB869 /* HowToProtectView.swift */; };
 		B9C62FB12C7E3EEE009AB869 /* ResultViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9C62FB02C7E3EEE009AB869 /* ResultViewModel.swift */; };
 		E76138722C5733110024E4BC /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76138712C5733110024E4BC /* SplashView.swift */; };
-		E76138742C5734F70024E4BC /* SplashSun.json in Resources */ = {isa = PBXBuildFile; fileRef = E76138732C5734F70024E4BC /* SplashSun.json */; };
 		E76A4C632C64567A00AFCD80 /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C622C64567900AFCD80 /* QuestionView.swift */; };
 		E76A4C652C645FC300AFCD80 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76A4C642C645FC300AFCD80 /* Color+Extension.swift */; };
 		E79ABF8F2C72E48F004744B3 /* CameraPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E79ABF8E2C72E48F004744B3 /* CameraPreviewView.swift */; };
@@ -76,6 +78,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B93604F12C8EBC5A005FDCB1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B93604F32C8EBC9B005FDCB1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
 		B946E82E2C7CDB660047A16B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B946E8302C7CE0C00047A16B /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		B946E8322C7CE22E0047A16B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
@@ -92,7 +97,6 @@
 		B9C62FAE2C7E3DB6009AB869 /* HowToProtectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToProtectView.swift; sourceTree = "<group>"; };
 		B9C62FB02C7E3EEE009AB869 /* ResultViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewModel.swift; sourceTree = "<group>"; };
 		E76138712C5733110024E4BC /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
-		E76138732C5734F70024E4BC /* SplashSun.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SplashSun.json; sourceTree = "<group>"; };
 		E76A4C622C64567900AFCD80 /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		E76A4C642C645FC300AFCD80 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 		E79ABF8E2C72E48F004744B3 /* CameraPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreviewView.swift; sourceTree = "<group>"; };
@@ -246,14 +250,6 @@
 			path = Atopic;
 			sourceTree = "<group>";
 		};
-		B946E82C2C7CD2100047A16B /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E76138732C5734F70024E4BC /* SplashSun.json */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
 		B946E82D2C7CDB520047A16B /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -261,6 +257,7 @@
 				B946E83C2C7DA6190047A16B /* Acne.swift */,
 				B946E83E2C7DA6200047A16B /* Atopic.swift */,
 				B946E8402C7DA62C0047A16B /* Bcc.swift */,
+				B93604F32C8EBC9B005FDCB1 /* Weather.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -310,6 +307,7 @@
 			isa = PBXGroup;
 			children = (
 				B946E8432C7DA8D60047A16B /* ImageFileManager.swift */,
+				B93604F12C8EBC5A005FDCB1 /* NetworkManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -358,6 +356,7 @@
 		E76A4C662C64601500AFCD80 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */,
 				E76A4C642C645FC300AFCD80 /* Color+Extension.swift */,
 				B946E8302C7CE0C00047A16B /* Font+Extension.swift */,
 				B9C62FA62C7E3324009AB869 /* Image+Extension.swift */,
@@ -389,7 +388,6 @@
 		E7E60E632C4DFF710052F77B /* Mandle */ = {
 			isa = PBXGroup;
 			children = (
-				B946E82C2C7CD2100047A16B /* Resources */,
 				B946E8422C7DA8C90047A16B /* Managers */,
 				B946E82D2C7CDB520047A16B /* Models */,
 				B946E8242C7CD1330047A16B /* Components */,
@@ -536,7 +534,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7E60E6C2C4DFFAD0052F77B /* Preview Assets.xcassets in Resources */,
-				E76138742C5734F70024E4BC /* SplashSun.json in Resources */,
 				E7E60E692C4DFFAD0052F77B /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -566,9 +563,12 @@
 				E76A4C632C64567A00AFCD80 /* QuestionView.swift in Sources */,
 				E7B27C362C698489002C4B26 /* Question4View.swift in Sources */,
 				B946E8312C7CE0C00047A16B /* Font+Extension.swift in Sources */,
+				B93604F42C8EBC9B005FDCB1 /* Weather.swift in Sources */,
+				B93604F22C8EBC5A005FDCB1 /* NetworkManager.swift in Sources */,
 				E7BE83C72C70C6D10053A151 /* AtopicGalleryView.swift in Sources */,
 				E7BE83CD2C70D8750053A151 /* AcneView.swift in Sources */,
 				B946E82F2C7CDB660047A16B /* User.swift in Sources */,
+				B93604F62C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				E7B27C3E2C6984CC002C4B26 /* Question7View.swift in Sources */,
 				E7BE83D12C70DA660053A151 /* BccView.swift in Sources */,
 				E7BE83C52C70C6BC0053A151 /* AcneGalleryView.swift in Sources */,
@@ -772,6 +772,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Skin Photo, Camara Permission Required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Get UVIndex, Humidty by Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -802,6 +803,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Skin Photo, Camara Permission Required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Get UVIndex, Humidty by Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
