@@ -30,8 +30,13 @@ struct HomeView: View {
                         Text("UV Index")
                             .font(.body2)
                             .foregroundStyle(Color.secondaryText)
-                        Text("3")
-                            .font(.title2)
+                        if viewModel.weather == nil {
+                            Text("-")
+                                .font(.title2)
+                        } else {
+                            Text("\(viewModel.weather?.uvIndex ?? 0)")
+                                .font(.title2)
+                        }
                     }
                     .padding(16)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -44,8 +49,13 @@ struct HomeView: View {
                         Text("Humidty")
                             .font(.body2)
                             .foregroundStyle(Color.secondaryText)
-                        Text("58%")
-                            .font(.title2)
+                        if viewModel.weather == nil {
+                            Text("-%")
+                                .font(.title2)
+                        } else {
+                            Text("\(viewModel.weather?.humidity ?? 0)%")
+                                .font(.title2)
+                        }
                     }
                     .padding(16)
                     .frame(maxWidth: .infinity, alignment: .leading)
@@ -150,6 +160,9 @@ struct HomeView: View {
             }
             .fullScreenCover(isPresented: $viewModel.isCameraOn) {
                 CameraView(isCameraOn: $viewModel.isCameraOn)
+            }
+            .task {
+                await viewModel.requestRealtimeWeather()
             }
         }
     }
