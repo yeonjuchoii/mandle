@@ -161,8 +161,11 @@ struct HomeView: View {
             .fullScreenCover(isPresented: $viewModel.isCameraOn) {
                 CameraView(isCameraOn: $viewModel.isCameraOn)
             }
-            .task {
-                await viewModel.requestRealtimeWeather()
+            .onAppear {
+                viewModel.checkLocationAuthorization()
+            }
+            .task(id: viewModel.location) {
+                await viewModel.requestRealtimeWeather(location: viewModel.location)
             }
         }
     }

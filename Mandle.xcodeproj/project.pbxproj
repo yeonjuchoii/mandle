@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		B93604F22C8EBC5A005FDCB1 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F12C8EBC5A005FDCB1 /* NetworkManager.swift */; };
 		B93604F42C8EBC9B005FDCB1 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F32C8EBC9B005FDCB1 /* Weather.swift */; };
+		B93604F62C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */; };
 		B946E82F2C7CDB660047A16B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E82E2C7CDB660047A16B /* User.swift */; };
 		B946E8312C7CE0C00047A16B /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E8302C7CE0C00047A16B /* Font+Extension.swift */; };
 		B946E8332C7CE22E0047A16B /* QuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B946E8322C7CE22E0047A16B /* QuestionViewModel.swift */; };
@@ -79,6 +80,7 @@
 /* Begin PBXFileReference section */
 		B93604F12C8EBC5A005FDCB1 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		B93604F32C8EBC9B005FDCB1 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CLLocationCoordinate2D+Extension.swift"; sourceTree = "<group>"; };
 		B946E82E2C7CDB660047A16B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		B946E8302C7CE0C00047A16B /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
 		B946E8322C7CE22E0047A16B /* QuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewModel.swift; sourceTree = "<group>"; };
@@ -354,6 +356,7 @@
 		E76A4C662C64601500AFCD80 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B93604F52C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift */,
 				E76A4C642C645FC300AFCD80 /* Color+Extension.swift */,
 				B946E8302C7CE0C00047A16B /* Font+Extension.swift */,
 				B9C62FA62C7E3324009AB869 /* Image+Extension.swift */,
@@ -565,6 +568,7 @@
 				E7BE83C72C70C6D10053A151 /* AtopicGalleryView.swift in Sources */,
 				E7BE83CD2C70D8750053A151 /* AcneView.swift in Sources */,
 				B946E82F2C7CDB660047A16B /* User.swift in Sources */,
+				B93604F62C8EDD80005FDCB1 /* CLLocationCoordinate2D+Extension.swift in Sources */,
 				E7B27C3E2C6984CC002C4B26 /* Question7View.swift in Sources */,
 				E7BE83D12C70DA660053A151 /* BccView.swift in Sources */,
 				E7BE83C52C70C6BC0053A151 /* AcneGalleryView.swift in Sources */,
@@ -768,6 +772,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Skin Photo, Camara Permission Required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Get UVIndex, Humidty by Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -798,6 +803,7 @@
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSCameraUsageDescription = "To Take Skin Photo, Camara Permission Required";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "To Get UVIndex, Humidty by Location";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -20,9 +20,10 @@ class NetworkManager {
             return WeatherData(data: nil)
         }
         
+        print("\(latitude), \(longitude)")
         let queryItems: [URLQueryItem] = [
-            URLQueryItem(name: "apikey", value: "nDdPkdTuSJrd75nUsPfWT0S6Xwb5S3MX"),
-            URLQueryItem(name: "location", value: "toronto")
+            URLQueryItem(name: "apikey", value: apiKey),
+            URLQueryItem(name: "location", value: "\(latitude), \(longitude)")
         ]
         components.queryItems = components.queryItems.map { $0 + queryItems } ?? queryItems
         
